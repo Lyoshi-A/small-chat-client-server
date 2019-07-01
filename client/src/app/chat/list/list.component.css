@@ -1,0 +1,59 @@
+.list-container {
+    position: fixed;
+    height: 97%; 
+    margin: 5px;
+    width: 20%; 
+    right:0px; 
+}
+
+.list-avatar {
+    width:20px;
+    height:20px;
+}
+
+.list-users {
+    overflow: auto;
+    position: fixed;
+    top: 90px;
+    right: 0px;
+    bottom: 120px;
+}
+
+.list-users-item {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    background-color: #E8EAF6;
+}
+
+.item-list {
+    display:grid;
+    height:20px;
+    padding:2px;
+    grid-template-columns: 25px auto;
+    align-items: center;
+    justify-items: start;  
+    margin-bottom: 2px;
+    border-radius: 5px; 
+}
+
+.item-list:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+
+.item-list.selected:hover {
+  color: #eee;
+  background-color: #607D8B;
+  left: .1em;
+}
+.item-list:nth-child(2n+1){
+  background-color: #1771a4de;
+  color: white;
+}
+
+.item-list:nth-child(2n){
+  background-color: #FFF;
+  color: grey;
+}

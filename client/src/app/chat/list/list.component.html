@@ -1,0 +1,6 @@
+<div class="list-container" *ngIf="users.length">
+      <div class="item-list" *ngFor="let user of users" (dblclick)="onClickListUser(user)">
+          <span><img class="list-avatar" src="{{user.avatar}}"></span>
+          <span>{{user.name}}</span>
+      </div>
+</div>
