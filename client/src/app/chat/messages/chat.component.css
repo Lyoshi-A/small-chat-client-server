@@ -13,7 +13,7 @@
 
 .chat-container {
     position: fixed;
-    display:grid;
+    
     align-content: end;
     height: 97%; 
     margin:5px;
@@ -44,10 +44,13 @@
 
 .main-card {
     height: 100%;  
-    display: block;
+    display:grid;
     position: relative;
     padding: 3px;
     border-radius: 2px;
+    border: 1px solid #ddd;
+    grid-template-rows: [row1-start] 90% [row1-end] auto [third-line] 30px [last-line];
+
 }
 
 .chat-footer-container {
