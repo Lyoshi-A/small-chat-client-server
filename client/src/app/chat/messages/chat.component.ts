@@ -146,6 +146,9 @@ export class ChatComponent implements OnInit, AfterViewInit {
 
   onAddToMessage(message: string) {
     console.log('message', message);
-    this.messageContent += message;
+    if (this.messageContent)
+       this.messageContent += message;
+    else 
+       this.messageContent = message;
   }
 }
