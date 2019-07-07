@@ -69,6 +69,10 @@ export class ChatComponent implements OnInit, AfterViewInit {
     }
   }
 
+  private getRandomId(): number {
+    return Math.floor(Math.random() * (1000000)) + 1;
+  }
+
   private initModel(): void {
     const randomId = this.getRandomId();
     this.user = {
@@ -96,9 +100,7 @@ export class ChatComponent implements OnInit, AfterViewInit {
       });
   }
 
-  private getRandomId(): number {
-    return Math.floor(Math.random() * (1000000)) + 1;
-  }
+
 
   private openUserPopup(params): void {
     this.dialogRef = this.dialog.open(DialogUserComponent, params);

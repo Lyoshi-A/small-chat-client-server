@@ -1,0 +1,35 @@
+/*@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    /*font-family: "Press Start 2P";*/
+}
+
+.chat-container {
+    position: fixed;
+
+    align-content: end;
+    height: 97%;
+    margin:5px;
+    width: 77%;
+    background-color: white;
+}
+
+.main-card {
+    height: 100%;
+    display:grid;
+    position: relative;
+    padding: 3px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    grid-template-rows: [row1-start] 90% [row1-end] auto [third-line] 30px [last-line];
+
+}
+
+
+
+
